@@ -1,0 +1,2 @@
+mvn clean javafx:run -Dexec.mainClass="org.utd.planner.DesktopApp"
+mvn spring-boot:run -Dspring-boot.run.main-class=org.utd.planner.WebApplication
