@@ -76,9 +76,12 @@
 		<plugins>
             <!-- Spring Boot plugin -->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>org.utd.planner.WebpageApp</mainClass>
+				</configuration>
+			</plugin>
 
 			<!-- JavaFX plugin -->
 			<plugin>
@@ -101,4 +104,18 @@
         </plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>web</id>
+			<properties>
+				<mainClass>org.utd.planner.WebpageApp</mainClass>
+			</properties>
+		</profile>
+		<profile>
+			<id>desktop</id>
+			<properties>
+				<mainClass>org.utd.planner.DesktopApp</mainClass>
+			</properties>
+		</profile>
+	</profiles>
 </project>
