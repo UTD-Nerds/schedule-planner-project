@@ -27,23 +27,28 @@ A desktop + web planner application built with **Spring Boot**, **JavaFX**. We s
 ## **Project Structure**
 
 planner/
- ├── src/main/java/org/utd/planner
- │     ├── controller
- │            ├── HomeController.java 
- │     ├── WebpageApp.java                  # Spring Boot entry point
- │     ├── exec.txt                         # Program Run Commands
- │     ├── DesktopApp.java                  # JavaFX entry point
- │
- ├── src/main/resources
- │     ├── static/                          # Static web assets (JS, CSS, images)
- │            ├── css
- │            ├── images
- │            ├── js
- │     ├── templates/                       # Thymeleaf templates
- │            ├── fragments
- │            ├── fxml
- │                  ├── hello-view.fxml
- │            ├── home.html
- │            ├── application.properties
- │
- ├── pom.xml                                # Maven dependencies & plugins
+├── pom.xml                                # Maven dependencies & plugins
+├── src/
+│   ├── main/
+│   │   ├── java/org/utd/planner/
+│   │   │   ├── controller/
+│   │   │   │   └── HomeController.java
+│   │   │   ├── WebpageApp.java            # Spring Boot entry point
+│   │   │   ├── DesktopApp.java            # JavaFX entry point
+│   │   │   └── exec.txt                   # Program Run Commands
+│   │   │
+│   │   └── resources/
+│   │       ├── application.properties     # Spring Boot configuration
+│   │       ├── static/                    # Static web assets
+│   │       │   ├── css/
+│   │       │   ├── images/
+│   │       │   └── js/
+│   │       └── templates/                 # Thymeleaf + FXML templates
+│   │           ├── fragments/
+│   │           ├── fxml/
+│   │           │   └── hello-view.fxml
+│   │           └── home.html
+│   │
+│   └── test/                              # Unit & integration tests
+│
+└── target/                                # Auto-generated build output (ignored by Git)
