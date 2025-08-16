@@ -78,9 +78,6 @@
             <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<mainClass>org.utd.planner.WebpageApp</mainClass>
-				</configuration>
 			</plugin>
 
 			<!-- JavaFX plugin -->
@@ -88,9 +85,6 @@
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-maven-plugin</artifactId>
 				<version>0.0.8</version>
-				<configuration>
-					<mainClass>org.utd.planner.DesktopApp</mainClass>
-				</configuration>
 			</plugin>
 
             <!-- Compiler plugin -->
