@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "WebpageApplication",
+            "request": "launch",
+            "mainClass": "org.utd.planner.WebpageApplication",
+            "projectName": "planner"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "org.utd.planner.Main",
+            "projectName": "planner"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PlannerApplication<planner>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "org.utd.planner.PlannerApplication",
+            "projectName": "planner",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
