@@ -13,13 +13,37 @@ A desktop + web planner application built with **Spring Boot**, **JavaFX**. We s
 3. [Git](https://git-scm.com/downloads)
 
 4. A Java IDE (optional but recommended):  
-  - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)  
-  - [VS Code](https://code.visualstudio.com/) with **Extension Pack for Java** and **Spring Boot Extension Pack**
+    -  [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)  
+    -  [VS Code](https://code.visualstudio.com/) with **Extension Pack for Java** and **Spring Boot Extension Pack**
 
 ## **Setup Instructions**
 
-1. Clone the repository:
+1. Clone the repository
 	-  `git clone https://github.com/khangdoan514/schedule-planner-project`
 
 2. CD into the cloned working directory
-	- `cd ./schedule-planner-project/planner` 
+	-  `cd ./schedule-planner-project/planner` 
+
+## **Project Structure**
+
+planner/
+ ├── src/main/java/org/utd/planner
+ │     ├── controller
+ │            ├── HomeController.java 
+ │     ├── WebpageApp.java                  # Spring Boot entry point
+ │     ├── exec.txt                         # Program Run Commands
+ │     ├── DesktopApp.java                  # JavaFX entry point
+ │
+ ├── src/main/resources
+ │     ├── static/                          # Static web assets (JS, CSS, images)
+ │            ├── css
+ │            ├── images
+ │            ├── js
+ │     ├── templates/                       # Thymeleaf templates
+ │            ├── fragments
+ │            ├── fxml
+ │                  ├── hello-view.fxml
+ │            ├── home.html
+ │            ├── application.properties
+ │
+ ├── pom.xml                                # Maven dependencies & plugins
