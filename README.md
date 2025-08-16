@@ -26,8 +26,8 @@ A desktop + web planner application built with **Spring Boot**, **JavaFX**. We s
 
 ## **Project Structure**
 
+```
 planner/
-├── pom.xml                                # Maven dependencies & plugins
 ├── src/
 │   ├── main/
 │   │   ├── java/org/utd/planner/
@@ -39,16 +39,23 @@ planner/
 │   │   │
 │   │   └── resources/
 │   │       ├── application.properties     # Spring Boot configuration
-│   │       ├── static/                    # Static web assets
+│   │       ├── static/                    # Static web assets (JS, CSS, images)
 │   │       │   ├── css/
+│   │       │   │   └── style.css
 │   │       │   ├── images/
 │   │       │   └── js/
+│   │       │       └── script.js
 │   │       └── templates/                 # Thymeleaf + FXML templates
 │   │           ├── fragments/
 │   │           ├── fxml/
 │   │           │   └── hello-view.fxml
-│   │           └── home.html
+│   │           └── home.html              # Main html homepage
 │   │
 │   └── test/                              # Unit & integration tests
 │
-└── target/                                # Auto-generated build output (ignored by Git)
+├── target/                                # Auto-generated build output (ignored by Git)
+├── .gitattributes
+├── .gitignore
+├── HELP.md
+└── pom.xml                                # Maven dependencies & plugins
+```
