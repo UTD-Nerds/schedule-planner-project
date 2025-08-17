@@ -4,20 +4,20 @@ A desktop + web planner application built with **Spring Boot**, **JavaFX**. We s
 
 ## **Building Requirements**
 
-### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
+#### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
-### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
+#### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
 
-### 3. [Git](https://git-scm.com/downloads)
+#### 3. [Git](https://git-scm.com/downloads)
 
-### 4. A Java Integrated Development Environment (IDE)
--  [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
+#### 4. A Java Integrated Development Environment (IDE)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 
--  [VS Code](https://code.visualstudio.com/) with **Extension Pack for Java** and **Spring Boot Extension Pack**
+- [VS Code](https://code.visualstudio.com/) with **Extension Pack for Java** and **Spring Boot Extension Pack**
 
 ## **Installation For macOS**
 
-### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
+#### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
 - Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
 
@@ -42,7 +42,7 @@ Matching Java Virtual Machines (1):
 java -version
 ```
 
-### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
+#### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
 
 - Visit [Maven download page](https://maven.apache.org/download.cgi)
 
@@ -65,11 +65,11 @@ source ~/.zshrc  # or ~/.bashrc
 mvn -v
 ```
 
-### 3. [Git](https://git-scm.com/downloads)
+#### 3. [Git](https://git-scm.com/downloads)
 
 ## **Installation For Windows**
 
-### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
+#### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
 - Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
 
@@ -97,7 +97,7 @@ mvn -v
 java -version
 ```
 
-### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
+#### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
 
 - Visit [Maven download page](https://maven.apache.org/download.cgi)
 
@@ -127,19 +127,19 @@ java -version
 mvn -v
 ```
 
-### 3. [Git](https://git-scm.com/downloads)
+#### 3. [Git](https://git-scm.com/downloads)
 
 ## **Project Setup**
 
 #### 1. Clone the repository
 
-```
+```bash
 git clone https://github.com/khangdoan514/schedule-planner-project
 ```
 
 #### 2. CD into the cloned working directory
 
-```
+```bash
 cd ./schedule-planner-project/planner
 ``` 
 
@@ -155,7 +155,7 @@ mvn spring-boot:run -P web
 
 ## **Project Structure**
 
-```
+```bash
 schedule-planner-project
 ├── planner/                                        # Main working directory
 │   ├── src/
