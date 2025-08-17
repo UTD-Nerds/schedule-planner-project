@@ -1,2 +1,0 @@
-mvn javafx:run -P desktop
-mvn spring-boot:run -P web

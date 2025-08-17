@@ -15,7 +15,7 @@ A desktop + web planner application built with **Spring Boot**, **JavaFX**. We s
 
 - [VS Code](https://code.visualstudio.com/) with **Extension Pack for Java** and **Spring Boot Extension Pack**
 
-## **Installation For macOS**
+## **Installation for macOS**
 
 #### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
@@ -36,7 +36,7 @@ Matching Java Virtual Machines (1):
     24.0.2 (arm64) "Oracle Corporation" - "Java SE 24.0.2" /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
 ```
 
-- Verify
+- Restart the terminal and verify
 
 ```bash
 java -version
@@ -59,7 +59,7 @@ export PATH=$MAVEN_HOME/bin:$PATH
 source ~/.zshrc  # or ~/.bashrc
 ```
 
-- Verify
+- Restart the terminal and verify
 
 ```bash
 mvn -v
@@ -67,13 +67,15 @@ mvn -v
 
 #### 3. [Git](https://git-scm.com/downloads)
 
-## **Installation For Windows**
+## **Installation for Windows**
 
 #### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
 - Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
 
 - Download the JDK and run the installer (use defaults)
+
+- Save to `C:\Program Files\Java\jdk-23` (replace "23" with your version)
 
 - Open **Start Menu** and search for **Environment Variables**
 
@@ -85,7 +87,7 @@ mvn -v
         
         - Variable name: `JAVA_HOME`
 
-        - Variable value: `C:\Program Files\Java\jdk-24` (replace "24" with your version)
+        - Variable value: `C:\Program Files\Java\jdk-23`
     
     - Find `Path` variable
     
@@ -103,7 +105,7 @@ java -version
 
 - Under **Files**, download `Binary zip archive (apache-maven-3.9.X-bin.zip)` and extract
 
-- Move the folder to `C:\Program Files\apache-maven-3.9.X`
+- Save to `C:\Program Files\apache-maven-3.9.X`
 
 - Open **Start Menu** and search for **Environment Variables**
 
@@ -145,12 +147,57 @@ cd ./schedule-planner-project/planner
 
 ## **Development**
 
-```bash
-# JavaFX desktop application
-mvn javafx:run -P desktop
+#### 1. JavaFX desktop application
 
-# Spring Boot web application
+- Maven Dependency (already included in this project)
+
+```xml
+<profiles>
+    <profile>
+        <id>desktop</id>
+        <properties>
+            <mainClass>org.utd.planner.DesktopApp</mainClass>
+        </properties>
+    </profile>
+</profiles>
+```
+
+- Program run command (with Maven dependency)
+
+```bash
+mvn javafx:run -P desktop
+```
+
+- Program run command (without Maven dependency)
+
+```bash
+mvn clean javafx:run -Dexec.mainClass="org.utd.planner.DesktopApp"
+```
+
+#### 2. Spring Boot web application
+
+- Maven Dependency (already included in this project)
+
+```xml
+<profiles>
+    <profile>
+        <id>web</id>
+        <properties>
+            <mainClass>org.utd.planner.WebpageApp</mainClass>
+        </properties>
+    </profile>
+</profiles>
+```
+- Program run command (with Maven dependency)
+
+```bash
 mvn spring-boot:run -P web
+```
+
+- Program run command (without Maven dependency)
+
+```bash
+mvn spring-boot:run -Dspring-boot.run.main-class="org.utd.planner.WebpageApp"
 ```
 
 ## **Project Structure**
@@ -166,7 +213,6 @@ schedule-planner-project
 │   │   │   │   │
 │   │   │   │   ├── WebpageApp.java                 # Spring Boot entry point
 │   │   │   │   ├── DesktopApp.java                 # JavaFX entry point
-│   │   │   │   └── exec.txt                        # Program Run Commands
 │   │   │   │
 │   │   │   └── resources/
 │   │   │       ├── application.properties          # Spring Boot configuration
