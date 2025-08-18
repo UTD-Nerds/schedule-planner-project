@@ -213,7 +213,13 @@ schedule-planner-project
 │   │   ├── main/
 │   │   │   ├── java/org/utd/planner/
 │   │   │   │   ├── controller/
-│   │   │   │   │   └── HomeController.java
+│   │   │   │   │   ├── javafx/
+│   │   │   │   │   │   └── ButtonController.java
+│   │   │   │   │   │
+│   │   │   │   │   └── springboot
+│   │   │   │   │       └── HomeController.java
+│   │   │   │   │
+│   │   │   │   │
 │   │   │   │   │
 │   │   │   │   ├── WebpageApp.java                 # Spring Boot entry point
 │   │   │   │   └── DesktopApp.java                 # JavaFX entry point
