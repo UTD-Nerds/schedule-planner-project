@@ -117,7 +117,7 @@ java -version
         
         - Variable name: `MAVEN_HOME`
 
-        - Variable value: `C:\Program Files\apache-maven-3.9.`
+        - Variable value: `C:\Program Files\apache-maven-3.9.X`
     
     - Find `Path` variable
     
