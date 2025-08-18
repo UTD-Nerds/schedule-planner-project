@@ -131,6 +131,10 @@ mvn -v
 
 #### 3. [Git](https://git-scm.com/downloads)
 
+## Installation for both macOS and Windows
+
+Git
+
 ## **Project Setup**
 
 #### 1. Clone the repository
