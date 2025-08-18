@@ -212,7 +212,7 @@ schedule-planner-project
 │   │   │   │   │   └── HomeController.java
 │   │   │   │   │
 │   │   │   │   ├── WebpageApp.java                 # Spring Boot entry point
-│   │   │   │   ├── DesktopApp.java                 # JavaFX entry point
+│   │   │   │   └── DesktopApp.java                 # JavaFX entry point
 │   │   │   │
 │   │   │   └── resources/
 │   │   │       ├── application.properties          # Spring Boot configuration
