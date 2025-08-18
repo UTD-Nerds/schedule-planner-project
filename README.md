@@ -117,7 +117,7 @@ java -version
         
         - Variable name: `MAVEN_HOME`
 
-        - Variable value: `C:\Program Files\apache-maven-3.9.`
+        - Variable value: `C:\Program Files\apache-maven-3.9.X`
     
     - Find `Path` variable
     
@@ -130,6 +130,10 @@ mvn -v
 ```
 
 #### 3. [Git](https://git-scm.com/downloads)
+
+## Installation for both macOS and Windows
+
+Git
 
 ## **Project Setup**
 
