@@ -153,7 +153,7 @@ cd ./schedule-planner-project/planner
 
 #### 1. JavaFX desktop application
 
-- Maven Dependency (already included in this project)
+- Maven dependency (already included in this project)
 
 ```xml
 <profiles>
@@ -180,7 +180,7 @@ mvn clean javafx:run -Dexec.mainClass="org.utd.planner.DesktopApp"
 
 #### 2. Spring Boot web application
 
-- Maven Dependency (already included in this project)
+- Maven dependency (already included in this project)
 
 ```xml
 <profiles>
