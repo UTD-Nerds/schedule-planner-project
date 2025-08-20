@@ -1,6 +1,12 @@
+<!-- ==================================================================================================== -->
+<!-- =========================================== Description ============================================ -->
+
 # **Schedule Planner Project**
 
 A desktop + web planner application built with **Spring Boot**, **JavaFX**. We still don't know what it does :D
+
+<!-- ==================================================================================================== -->
+<!-- =================================== Buiding Requirements =================================== -->
 
 ## **Building Requirements**
 
@@ -14,6 +20,9 @@ A desktop + web planner application built with **Spring Boot**, **JavaFX**. We s
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 
 - [VS Code](https://code.visualstudio.com/) with **Extension Pack for Java** and **Spring Boot Extension Pack**
+
+<!-- ==================================================================================================== -->
+<!-- ==================== Installation for macOS ==================== -->
 
 ## **Installation for macOS**
 
@@ -66,6 +75,9 @@ mvn -v
 ```
 
 #### 3. [Git](https://git-scm.com/downloads)
+
+<!-- ==================================================================================================== -->
+<!-- ===================================== Installation for Windows ===================================== -->
 
 ## **Installation for Windows**
 
@@ -135,19 +147,25 @@ mvn -v
 
 Git
 
+<!-- ==================================================================================================== -->
+<!-- ========================================== Project Setup =========================================== -->
+
 ## **Project Setup**
 
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/khangdoan514/schedule-planner-project
+git clone https://github.com/UTD-Nerds/schedule-planner-project
 ```
 
 #### 2. CD into the cloned working directory
 
 ```bash
 cd ./schedule-planner-project/planner
-``` 
+```
+
+<!-- ==================================================================================================== -->
+<!-- =========================================== Developement =========================================== -->
 
 ## **Development**
 
@@ -204,53 +222,56 @@ mvn spring-boot:run -P web
 mvn spring-boot:run -Dspring-boot.run.main-class="org.utd.planner.WebpageApp"
 ```
 
+<!-- ==================================================================================================== -->
+<!-- ======================================== Project Structure ========================================= -->
+
 ## **Project Structure**
 
 ```bash
-schedule-planner-project
-├── planner/                                        # Main working directory
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/org/utd/planner/
-│   │   │   │   ├── controller/
-│   │   │   │   │   ├── javafx/
-│   │   │   │   │   │   └── ButtonController.java
-│   │   │   │   │   │
-│   │   │   │   │   └── springboot
-│   │   │   │   │       └── HomeController.java
-│   │   │   │   │
-│   │   │   │   │
-│   │   │   │   │
-│   │   │   │   ├── WebpageApp.java                 # Spring Boot entry point
-│   │   │   │   └── DesktopApp.java                 # JavaFX entry point
-│   │   │   │
-│   │   │   └── resources/
-│   │   │       ├── application.properties          # Spring Boot configuration
-│   │   │       ├── static/                         # Static web assets (JS, CSS, images)
-│   │   │       │   ├── css/
-│   │   │       │   │   └── style.css
-│   │   │       │   │
-│   │   │       │   ├── images/
-│   │   │       │   └── js/
-│   │   │       │       └── script.js
-│   │   │       │
-│   │   │       └── templates/                      # Thymeleaf + FXML templates
-│   │   │           ├── fragments/
-│   │   │           ├── fxml/
-│   │   │           │   └── hello-view.fxml
-│   │   │           │
-│   │   │           └── home.html                   # Main html homepage
-│   │   │
-│   │   └── test/                                   # Unit & integration tests
-│   │
-│   ├── target/                                     # Auto-generated build output (ignored by Git)
-│   ├── .gitattributes
-│   ├── .gitignore
-│   ├── HELP.md
-│   └── pom.xml                                     # Maven dependencies & plugins
-│
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
+├── planner/                                                            # Main working directory
+│   ├── HELP.md
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml                                                         # Maven dependencies & plugins
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── org/
+│   │   │   │       └── utd/
+│   │   │   │           └── planner/
+│   │   │   │               ├── controller/
+│   │   │   │               │   ├── javafx/
+│   │   │   │               │   │   ├── homeController.java
+│   │   │   │               │   │   └── raisaideaController.java
+│   │   │   │               │   └── springboot/
+│   │   │   │               │       └── HomeController.java
+│   │   │   │               ├── DesktopApp.java                         # Spring Boot entry point
+│   │   │   │               └── WebpageApp.java                         # JavaFX entry point
+│   │   │   └── resources/
+│   │   │       ├── application.properties                              # Spring Boot configuration
+│   │   │       ├── static/                                             # Static web assets
+│   │   │       │   ├── css/
+│   │   │       │   │   └── style.css
+│   │   │       │   ├── images/
+│   │   │       │   │   └── test.txt
+│   │   │       │   └── js/
+│   │   │       │       └── script.js
+│   │   │       └── templates/
+│   │   │           ├── fragments/                                      # Thymeleaf
+│   │   │           │   ├── test.txt
+│   │   │           ├── fxml/                                           #FXML templates
+│   │   │           │   ├── hello-view.fxml
+│   │   │           │   └── raisaidea.fxml
+│   │   │           └── home.html                                       # Main html homepage
+│   │   └── test/                                                       # Unit & integration tests
+│   │       └── java/
+│   │           └── org/
+│   │               └── utd/
+│   │                   └── planner/
+│   │                       └── PlannerApplicationTests.java
+│   └── target/                                                         # Auto-generated build output (ignored by Git)
 └── README.md
 ```
