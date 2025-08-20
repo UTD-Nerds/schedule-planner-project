@@ -16,12 +16,14 @@ By combining two popular Java technologies within a single project, Schedule Pla
 
 #### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
-#### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
+#### 2. [Apache Maven 3.9+](https://maven.apache.org)
 
-#### 3. [Git](https://git-scm.com/downloads)
+#### 3. [Git](https://git-scm.com)
 
-#### 4. A Java Integrated Development Environment (IDE)
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
+#### 4. [SceneBuilder](https://gluonhq.com/products/scene-builder/)
+
+#### 5. A Java Integrated Development Environment (IDE)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
 - [VS Code](https://code.visualstudio.com/) with **Extension Pack for Java** and **Spring Boot Extension Pack**
 
@@ -33,6 +35,8 @@ By combining two popular Java technologies within a single project, Schedule Pla
 #### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
 - Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
+
+- Choose the appropriate installer for your operating system
 
 - Download the JDK and run the installer (use defaults)
 
@@ -55,24 +59,23 @@ Matching Java Virtual Machines (1):
 java -version
 ```
 
-#### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
+#### 2. [Apache Maven 3.9+](https://maven.apache.org)
 
-- Visit [Maven download page](https://maven.apache.org/download.cgi)
+- Visit the [Maven download page](https://maven.apache.org/download.cgi)
 
 - Under **Files**, download `Binary zip archive (apache-maven-3.9.X-bin.zip)` and unzip
 
 - Add to `~/.zshrc` or `~/.bashrc`
 
 ```bash
-# or /opt/maven if symlink
-export MAVEN_HOME=/opt/apache-maven-3.9.X
+export MAVEN_HOME=/opt/apache-maven-3.9.X       # or /opt/maven if symlink
 export PATH=$MAVEN_HOME/bin:$PATH
 ```
 
 - Reload
 
 ```bash
-source ~/.zshrc  # or ~/.bashrc
+source ~/.zshrc     # or ~/.bashrc
 ```
 
 - Restart the terminal and verify
@@ -80,8 +83,6 @@ source ~/.zshrc  # or ~/.bashrc
 ```bash
 mvn -v
 ```
-
-#### 3. [Git](https://git-scm.com/downloads)
 
 <!-- ==================================================================================================== -->
 <!-- ===================================== Installation for Windows ===================================== -->
@@ -91,6 +92,8 @@ mvn -v
 #### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
 - Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
+
+- Choose the appropriate installer for your operating system
 
 - Download the JDK and run the installer (use defaults)
 
@@ -118,9 +121,9 @@ mvn -v
 java -version
 ```
 
-#### 2. [Apache Maven 3.9+](https://maven.apache.org/download.cgi)
+#### 2. [Apache Maven 3.9+](https://maven.apache.org)
 
-- Visit [Maven download page](https://maven.apache.org/download.cgi)
+- Visit the [Maven download page](https://maven.apache.org/download.cgi)
 
 - Under **Files**, download `Binary zip archive (apache-maven-3.9.X-bin.zip)` and extract
 
@@ -148,11 +151,23 @@ java -version
 mvn -v
 ```
 
-#### 3. [Git](https://git-scm.com/downloads)
-
 ## Installation for both macOS and Windows
 
-Git
+#### 1. [Git](https://git-scm.com)
+
+- Visit the [Git download page](https://git-scm.com/downloads)
+
+- Choose the appropriate installer for your operating system
+
+- Download and run the installer (use defaults)
+
+#### 2. [SceneBuilder](https://gluonhq.com/products/scene-builder/)
+
+- Visit the [SceneBuilder download page](https://gluonhq.com/products/scene-builder/)
+
+- Choose the appropriate installer for your operating system
+
+- Download and run the installer (use defaults)
 
 <!-- ==================================================================================================== -->
 <!-- ========================================== Project Setup =========================================== -->
@@ -165,7 +180,7 @@ Git
 git clone https://github.com/UTD-Nerds/schedule-planner-project
 ```
 
-#### 2. CD into the cloned working directory
+#### 2. Navigate to the project folder (cloned working directory)
 
 ```bash
 cd ./schedule-planner-project/planner
