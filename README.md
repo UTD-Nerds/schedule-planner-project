@@ -6,7 +6,7 @@
 A desktop + web planner application built with **Spring Boot**, **JavaFX**. We still don't know what it does :D
 
 <!-- ==================================================================================================== -->
-<!-- =================================== Buiding Requirements =================================== -->
+<!-- ======================================= Buiding Requirements ======================================= -->
 
 ## **Building Requirements**
 
@@ -22,7 +22,7 @@ A desktop + web planner application built with **Spring Boot**, **JavaFX**. We s
 - [VS Code](https://code.visualstudio.com/) with **Extension Pack for Java** and **Spring Boot Extension Pack**
 
 <!-- ==================================================================================================== -->
-<!-- ==================== Installation for macOS ==================== -->
+<!-- ====================================== Installation for macOS ====================================== -->
 
 ## **Installation for macOS**
 
@@ -193,7 +193,7 @@ mvn javafx:run -P desktop
 - Program run command (without Maven dependency)
 
 ```bash
-mvn clean javafx:run -Dexec.mainClass="org.utd.planner.DesktopApp"
+mvn javafx:run -Dexec.mainClass="org.utd.planner.DesktopApp"
 ```
 
 #### 2. Spring Boot web application
