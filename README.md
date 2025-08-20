@@ -3,7 +3,11 @@
 
 # **Schedule Planner Project**
 
-A desktop + web planner application built with **Spring Boot**, **JavaFX**. We still don't know what it does :D
+Schedule Planner Project is a hybrid Java application that combines the power of Spring Boot for backend services and JavaFX for a desktop GUI. It’s designed to help organize and manage schedules efficiently, whether through a web interface or a standalone desktop experience.
+
+The project is built with Maven, which handles all dependency management, build tasks, and project structure. This keeps the development process smooth and predictable, especially when working across multiple modules or switching between desktop and web environments. Maven’s support for clear configuration also makes it easier to onboard new contributors and manage the application as it grows.
+
+By combining two popular Java technologies within a single project, Schedule Planner provides a solid foundation for developing hybrid applications. Whether it’s used as a personal tool or expanded into a larger solution, the structure is built to support long-term development, easy maintenance, and a wide range of potential features.
 
 <!-- ==================================================================================================== -->
 <!-- ======================================= Buiding Requirements ======================================= -->
