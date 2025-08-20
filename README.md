@@ -63,8 +63,11 @@ java -version
 # or /opt/maven if symlink
 export MAVEN_HOME=/opt/apache-maven-3.9.X
 export PATH=$MAVEN_HOME/bin:$PATH
+```
 
-# Reload
+- Reload
+
+```bash
 source ~/.zshrc  # or ~/.bashrc
 ```
 
@@ -87,7 +90,7 @@ mvn -v
 
 - Download the JDK and run the installer (use defaults)
 
-- Save to `C:\Program Files\Java\jdk-23` (replace "23" with your version)
+- Save the folder to `C:\Program Files\Java\jdk-23` (replace "23" with your version)
 
 - Open **Start Menu** and search for **Environment Variables**
 
@@ -99,7 +102,7 @@ mvn -v
         
         - Variable name: `JAVA_HOME`
 
-        - Variable value: `C:\Program Files\Java\jdk-23`
+        - Variable value: `C:\Program Files\Java\jdk-23` (replace "23" with your version)
     
     - Find `Path` variable
     
@@ -117,7 +120,7 @@ java -version
 
 - Under **Files**, download `Binary zip archive (apache-maven-3.9.X-bin.zip)` and extract
 
-- Save to `C:\Program Files\apache-maven-3.9.X`
+- Save the folder to `C:\Program Files\apache-maven-3.9.X`
 
 - Open **Start Menu** and search for **Environment Variables**
 
