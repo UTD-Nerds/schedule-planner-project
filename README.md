@@ -34,9 +34,7 @@ By combining two popular Java technologies within a single project, Schedule Pla
 
 #### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
-- Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
-
-- Choose the appropriate installer for your operating system
+- Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/) and choose the appropriate installer for your operating system
 
 - Download the JDK and run the installer (use defaults)
 
@@ -91,19 +89,15 @@ mvn -v
 
 #### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
-- Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
-
-- Choose the appropriate installer for your operating system
+- Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/) and choose the appropriate installer for your operating system
 
 - Download the JDK and run the installer (use defaults)
 
 - Save the folder to `C:\Program Files\Java\jdk-23` (replace "23" with your version)
 
-- Open **Start Menu** and search for **Environment Variables**
+- Open **Start Menu** → Search for **Edit the system environment variables**
 
-- Select **Edit the system environment variables** → Select **Environment Variables...**
-
-- Under **System variables**
+- Select **Environment Variables**. Under **System variables**
   
     - Select **New**
         
@@ -129,11 +123,9 @@ java -version
 
 - Save the folder to `C:\Program Files\apache-maven-3.9.X`
 
-- Open **Start Menu** and search for **Environment Variables**
+- Open **Start Menu** → Search for **Edit the system environment variables**
 
-- Select **Edit the system environment variables** → Select **Environment Variables...**
-
-- Under **System variables**
+- Select **Environment Variables**. Under **System variables**
   
     - Select **New**
         
@@ -155,17 +147,13 @@ mvn -v
 
 #### 1. [Git](https://git-scm.com)
 
-- Visit the [Git download page](https://git-scm.com/downloads)
-
-- Choose the appropriate installer for your operating system
+- Visit the [Git download page](https://git-scm.com/downloads) and choose the appropriate installer for your operating system
 
 - Download and run the installer (use defaults)
 
 #### 2. [SceneBuilder](https://gluonhq.com/products/scene-builder/)
 
-- Visit the [SceneBuilder download page](https://gluonhq.com/products/scene-builder/)
-
-- Choose the appropriate installer for your operating system
+- Visit the [SceneBuilder download page](https://gluonhq.com/products/scene-builder/) and choose the appropriate installer for your operating system
 
 - Download and run the installer (use defaults)
 
