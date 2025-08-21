@@ -5,7 +5,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.utd.planner.controller.javafx.raisaideaController">
    <children>
       <Text fill="#b22626" layoutX="252.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20; -fx-font-family: &quot;Lucida Handwriting&quot;; -fx-font-weight: 500;" text="Welcome">
@@ -15,7 +14,12 @@
       </Text>
       <Text fill="#dd4c51" layoutX="127.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Times New Roman&quot;; -fx-font-size: 18;" text="What can our Schedule Planner assist you with?" />
       <Button fx:id="viewSchedule" layoutX="81.0" layoutY="188.0" mnemonicParsing="false" onAction="#method" text="View Schedule" textFill="#94590c" />
-      <Button layoutX="236.0" layoutY="188.0" mnemonicParsing="false" text="Create New Schedule" textFill="#1d5108" />
+      <Button fx:id="newSchedule" layoutX="236.0" layoutY="188.0" mnemonicParsing="false" onAction="#bark" text="Create New Schedule" textFill="#1d5108" />
       <Button layoutX="429.0" layoutY="188.0" mnemonicParsing="false" text="Edit Schedule" textFill="#b9bc18" />
+      <Text fx:id="helloWorld" fill="#b3a1ff" layoutX="121.0" layoutY="317.0" stroke="#ff2323" strokeType="OUTSIDE" text="Hello World" textAlignment="CENTER" wrappingWidth="358.51055908203125">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
