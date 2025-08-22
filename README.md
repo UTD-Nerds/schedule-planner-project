@@ -121,7 +121,7 @@ java -version
 
 - Under **Files**, download `Binary zip archive (apache-maven-3.9.X-bin.zip)` and extract
 
-- Save the folder to `C:\Program Files\apache-maven-3.9.X`
+- Save the folder to `C:\Program Files\apache-maven-3.9.X` (replace "X" with your version)
 
 - Open **Start Menu** → Search for **Edit the system environment variables**
 
@@ -131,7 +131,7 @@ java -version
         
         - Variable name: `MAVEN_HOME`
 
-        - Variable value: `C:\Program Files\apache-maven-3.9.X`
+        - Variable value: `C:\Program Files\apache-maven-3.9.X` (replace "X" with your version)
     
     - Find `Path` variable
     
