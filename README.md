@@ -238,6 +238,7 @@ mvn spring-boot:run -Dspring-boot.run.main-class="org.utd.planner.WebpageApp"
 ## **Project Structure**
 
 ```bash
+schedule-planner-project
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
